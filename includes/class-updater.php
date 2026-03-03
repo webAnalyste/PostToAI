@@ -121,7 +121,7 @@ class ShareToAI_Updater {
         $plugin_info->name = 'ShareToAI';
         $plugin_info->slug = dirname($this->plugin_slug);
         $plugin_info->version = $remote_version;
-        $plugin_info->author = '<a href="https://www.flowt.fr">Flowt</a>';
+        $plugin_info->author = '<a href="https://www.webanalyste.com">Franck Scandolera</a>';
         $plugin_info->homepage = "https://github.com/{$this->github_user}/{$this->github_repo}";
         $plugin_info->download_link = $this->get_download_url($remote_version);
         $plugin_info->requires = '5.0';

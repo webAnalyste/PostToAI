@@ -162,7 +162,7 @@ svn ci -m "Tagging version 1.0.0"
 - Support actif dans les forums
 
 ### Communication
-- Article de blog sur flowt.fr
+- Article de blog sur webanalyste.com
 - Partage sur réseaux sociaux
 - Documentation vidéo (optionnel)
 

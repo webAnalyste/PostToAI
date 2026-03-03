@@ -5,6 +5,13 @@ Toutes les modifications notables de ce projet seront documentées dans ce fichi
 Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/),
 et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [1.0.2] - 2026-03-03
+
+### Modifié
+- 📝 **Auteur** : Mise à jour de l'auteur - Franck Scandolera / webAnalyste
+- 🌐 **URLs** : Remplacement de toutes les références flowt.fr par webanalyste.com
+- 📝 **Prompt** : Mise à jour du prompt par défaut avec webAnalyste
+
 ## [1.0.1] - 2026-03-03
 
 ### Corrigé

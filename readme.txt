@@ -1,10 +1,10 @@
 === ShareToAI ===
-Contributors: flowt
+Contributors: franckscan
 Tags: ai, artificial intelligence, chatgpt, claude, perplexity, summary, content
 Requires at least: 5.0
 Tested up to: 6.4
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -100,6 +100,10 @@ Non, ShareToAI est très léger (<10KB total) et n'effectue aucune requête exte
 
 == Changelog ==
 
+= 1.0.2 - 2026-03-03 =
+* Mise à jour des informations d'auteur : Franck Scandolera / webAnalyste
+* Correction du prompt par défaut
+
 = 1.0.1 - 2026-03-03 =
 * Ajout de rel="nofollow" sur tous les liens IA (SEO)
 * Correction du style des boutons (suppression du soulignement)
@@ -125,7 +129,7 @@ Version initiale du plugin ShareToAI.
 
 Pour toute question ou problème :
 * GitHub : https://github.com/webAnalyste/shareToAI/issues
-* Site web : https://www.flowt.fr
+* Site web : https://www.webanalyste.com
 
 == Développement ==
 

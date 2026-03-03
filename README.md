@@ -76,7 +76,7 @@ Le plugin respecte toutes les bonnes pratiques WordPress :
 ## Support
 
 - GitHub : https://github.com/webAnalyste/shareToAI
-- Site web : https://www.flowt.fr
+- Site web : https://www.webanalyste.com
 
 ## Changelog
 
@@ -93,5 +93,5 @@ GPL v2 or later
 
 ## Auteur
 
-Développé par Flowt - Agence Data et IA
-https://www.flowt.fr
+Développé par Franck Scandolera - webAnalyste
+https://www.webanalyste.com
