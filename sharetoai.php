@@ -3,7 +3,7 @@
  * Plugin Name: ShareToAI
  * Plugin URI: https://github.com/webAnalyste/shareToAI
  * Description: Ajoute automatiquement des liens vers différentes IA pour résumer le contenu de vos posts et CPT
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Franck Scandolera
  * Author URI: https://www.webanalyste.com
  * License: GPL v2 or later
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('SHARETOAI_VERSION', '1.0.2');
+define('SHARETOAI_VERSION', '1.0.3');
 define('SHARETOAI_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('SHARETOAI_PLUGIN_URL', plugin_dir_url(__FILE__));
 

@@ -4,7 +4,7 @@ Tags: ai, artificial intelligence, chatgpt, claude, perplexity, summary, content
 Requires at least: 5.0
 Tested up to: 6.4
 Requires PHP: 7.4
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -99,6 +99,9 @@ Non, ShareToAI est très léger (<10KB total) et n'effectue aucune requête exte
 5. Personnalisation du prompt avec placeholder {URL}
 
 == Changelog ==
+
+= 1.0.3 - 2026-03-03 =
+* Version de test pour le système de mise à jour automatique
 
 = 1.0.2 - 2026-03-03 =
 * Mise à jour des informations d'auteur : Franck Scandolera / webAnalyste

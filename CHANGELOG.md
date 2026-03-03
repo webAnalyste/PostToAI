@@ -5,6 +5,12 @@ Toutes les modifications notables de ce projet seront documentées dans ce fichi
 Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/),
 et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [1.0.3] - 2026-03-03
+
+### Test
+- 🧪 **Version de test** : Pour valider le système de mise à jour automatique
+- ✅ Permet de tester la notification et l'installation automatique depuis GitHub
+
 ## [1.0.2] - 2026-03-03
 
 ### Modifié
