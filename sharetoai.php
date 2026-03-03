@@ -354,11 +354,15 @@ class ShareToAI {
                     <?php
                     $url = str_replace('{PROMPT}', $encoded_prompt, $service['url']);
                     ?>
+                    <?php
+                    /* translators: %s: AI service name (e.g., Perplexity, ChatGPT) */
+                    $title = sprintf(__('Résumer avec %s', 'sharetoai'), $service['name']);
+                    ?>
                     <a href="<?php echo esc_url($url); ?>" 
                        class="sharetoai-link sharetoai-link-<?php echo esc_attr($key); ?>" 
                        target="_blank" 
                        rel="nofollow noopener noreferrer"
-                       title="<?php echo esc_attr(sprintf(__('Résumer avec %s', 'sharetoai'), $service['name'])); ?>">
+                       title="<?php echo esc_attr($title); ?>">
                         <?php if ($options['display_style'] === 'icons'): ?>
                             <img src="<?php echo esc_url(SHARETOAI_PLUGIN_URL . 'assets/images/' . $service['icon']); ?>" 
                                  alt="<?php echo esc_attr($service['name']); ?>"

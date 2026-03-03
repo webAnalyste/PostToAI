@@ -1,6 +1,6 @@
 === ShareToAI ===
 Contributors: franckscan
-Tags: ai, artificial intelligence, chatgpt, claude, perplexity, summary, content
+Tags: ai, chatgpt, claude, perplexity, summary
 Requires at least: 5.0
 Tested up to: 6.9
 Requires PHP: 7.4
@@ -8,140 +8,166 @@ Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Ajoutez automatiquement des liens vers différentes IA pour résumer le contenu de vos posts et Custom Post Types.
+Automatically add links to AI services (Perplexity, ChatGPT, Claude, Grok, Mistral) to summarize your posts and Custom Post Types.
 
 == Description ==
 
-ShareToAI permet d'afficher automatiquement une invitation personnalisable "Résumer ce contenu avec :" suivie d'icônes cliquables vers différents services d'IA (Perplexity, ChatGPT, Claude, Grok, Mistral).
+ShareToAI automatically displays a customizable invitation "Summarize this content with:" followed by clickable icons to various AI services (Perplexity, ChatGPT, Claude, Grok, Mistral).
 
-= Fonctionnalités principales =
+= Key Features =
 
-* ✅ Affichage automatique en haut, en bas ou les deux
-* ✅ Support des posts et Custom Post Types
-* ✅ Shortcode `[sharetoai]` pour placement manuel
-* ✅ Texte et prompt personnalisables
-* ✅ Choix des services IA à afficher
-* ✅ 3 styles d'affichage : icônes, boutons, liste
-* ✅ Responsive et accessible
-* ✅ Sécurisé selon les standards WordPress
-* ✅ Traçabilité des clics (compatible Google Analytics)
+* **Automatic display** on posts and custom post types
+* **5 AI services** supported: Perplexity, ChatGPT, Claude, Grok, Mistral
+* **3 display styles**: icons only, buttons with text, or list
+* **Shortcode** `[sharetoai]` for manual placement
+* **Fully customizable** text and AI prompt
+* **Position control**: top, bottom, both, or manual via shortcode
+* **Custom Post Types** support
+* **Responsive** and accessible design
+* **Secure** following WordPress standards
+* **SEO-friendly** with rel="nofollow" on external links
 
-= Services IA supportés =
+= How It Works =
 
-* Perplexity
-* ChatGPT
-* Claude
-* Grok
-* Mistral
+1. Install and activate the plugin
+2. Go to Settings > ShareToAI
+3. Choose which AI services to display
+4. Customize the text and prompt
+5. Select display style and position
+6. Your posts now have AI summary links!
 
-= Utilisation =
+= Use Cases =
 
-1. Activez le plugin
-2. Allez dans Réglages > ShareToAI
-3. Configurez vos préférences
-4. Les liens IA apparaîtront automatiquement sur vos articles
+* Allow readers to get AI summaries of your articles
+* Provide quick content overview via AI
+* Enhance user experience with AI tools
+* Share your content with AI assistants
 
-Vous pouvez aussi utiliser le shortcode `[sharetoai]` pour un placement manuel dans vos contenus.
+= Shortcode Usage =
+
+Use `[sharetoai]` anywhere in your content to manually place the AI links.
 
 == Installation ==
 
-= Installation automatique =
+= Automatic Installation =
 
-1. Allez dans Extensions > Ajouter
-2. Recherchez "ShareToAI"
-3. Cliquez sur Installer puis Activer
+1. Go to Plugins > Add New
+2. Search for "ShareToAI"
+3. Click "Install Now"
+4. Activate the plugin
+5. Go to Settings > ShareToAI to configure
 
-= Installation manuelle =
+= Manual Installation =
 
-1. Téléchargez le fichier ZIP du plugin
-2. Allez dans Extensions > Ajouter > Téléverser une extension
-3. Sélectionnez le fichier ZIP
-4. Cliquez sur Installer maintenant puis Activer
+1. Download the plugin ZIP file
+2. Go to Plugins > Add New > Upload Plugin
+3. Choose the ZIP file and click "Install Now"
+4. Activate the plugin
+5. Go to Settings > ShareToAI to configure
 
-= Installation via GitHub =
+= Configuration =
 
-1. Téléchargez la dernière version depuis https://github.com/webAnalyste/shareToAI/releases
-2. Décompressez le fichier dans `/wp-content/plugins/`
-3. Activez le plugin dans Extensions > Extensions installées
+After activation:
+
+1. Go to **Settings > ShareToAI**
+2. **Enable/Disable** the plugin
+3. **Select AI services** to display (Perplexity, ChatGPT, Claude, Grok, Mistral)
+4. **Choose display style**: Icons, Buttons, or List
+5. **Set position**: Top of content, Bottom, Both, or Manual (shortcode only)
+6. **Customize text**: Default is "Summarize this content with:"
+7. **Customize prompt**: Use {URL} placeholder for the page URL
+8. **Select post types**: Posts, Pages, or Custom Post Types
+9. Click **Save Changes**
 
 == Frequently Asked Questions ==
 
-= Comment personnaliser le texte d'invitation ? =
+= Which AI services are supported? =
 
-Allez dans Réglages > ShareToAI et modifiez le champ "Texte personnalisé".
+Currently supported: Perplexity, ChatGPT, Claude, Grok, and Mistral. More services may be added in future updates.
 
-= Comment choisir quels services IA afficher ? =
+= Can I customize the AI prompt? =
 
-Dans Réglages > ShareToAI, cochez/décochez les services dans la section "Services IA activés".
+Yes! Go to Settings > ShareToAI and edit the "Custom Prompt" field. Use {URL} as a placeholder for the current page URL.
 
-= Le shortcode fonctionne-t-il dans les widgets ? =
+= Does this work with Custom Post Types? =
 
-Oui, le shortcode `[sharetoai]` fonctionne dans les articles, pages, widgets texte et templates PHP.
+Yes! You can select which post types should display the AI links in the settings.
 
-= Le plugin est-il compatible avec les page builders ? =
+= Can I place the links manually? =
 
-Oui, ShareToAI est compatible avec Elementor, Divi, Gutenberg et tous les page builders majeurs.
+Yes! Use the `[sharetoai]` shortcode anywhere in your content. Set the position to "Manual" in settings to disable automatic display.
 
-= Comment désactiver le plugin sur certains articles ? =
+= Are the AI links SEO-friendly? =
 
-Réglez la position sur "Manuel" dans les paramètres, puis utilisez le shortcode uniquement où vous le souhaitez.
+Yes! All external AI links include rel="nofollow noopener noreferrer" attributes to protect your SEO.
 
-= Le plugin ralentit-il mon site ? =
+= Does this plugin send data to external services? =
 
-Non, ShareToAI est très léger (<10KB total) et n'effectue aucune requête externe.
+No! The plugin only creates links. When users click on them, they are redirected to the AI service with the page URL. No data is sent from your server.
+
+= Is it compatible with page builders? =
+
+Yes! The plugin works with any theme or page builder. You can also use the shortcode in page builders.
+
+= Can I change the appearance? =
+
+Yes! Choose from 3 built-in styles (Icons, Buttons, List) or add custom CSS to match your theme.
 
 == Screenshots ==
 
-1. Page de configuration du plugin dans Réglages > ShareToAI
-2. Affichage des liens IA en style "Icônes" sur un article
-3. Affichage en style "Boutons avec texte"
-4. Affichage en style "Liste"
-5. Personnalisation du prompt avec placeholder {URL}
+1. Plugin settings page in Settings > ShareToAI
+2. AI links displayed with "Icons" style on a post
+3. Display with "Buttons with text" style
+4. Display with "List" style
+5. Custom prompt configuration with {URL} placeholder
 
 == Changelog ==
 
 = 1.1.0 - 2026-03-03 =
-* Version optimisée pour WordPress.org
-* Suppression du système de mise à jour personnalisé (WordPress.org gère nativement les mises à jour)
-* Suppression de load_plugin_textdomain() (automatique depuis WP 4.6)
-* Mise à jour compatibilité WordPress 6.9
+* Optimized for WordPress.org
+* Removed custom update system (WordPress.org handles updates natively)
+* Removed load_plugin_textdomain() (automatic since WP 4.6)
+* Updated compatibility to WordPress 6.9
 
 = 1.0.3 - 2026-03-03 =
-* Version de test pour le système de mise à jour automatique
+* Test version for automatic update system
 
 = 1.0.2 - 2026-03-03 =
-* Mise à jour des informations d'auteur : Franck Scandolera / webAnalyste
-* Correction du prompt par défaut
+* Updated author information: Franck Scandolera / webAnalyste
+* Fixed default prompt
 
 = 1.0.1 - 2026-03-03 =
-* Ajout de rel="nofollow" sur tous les liens IA (SEO)
-* Correction du style des boutons (suppression du soulignement)
-* Amélioration visuelle des boutons avec bordure
+* Added rel="nofollow" to all AI links (SEO)
+* Fixed button style (removed text underline)
+* Visual improvement with borders on buttons
 
 = 1.0.0 - 2026-03-03 =
-* Version initiale
-* Affichage automatique et shortcode
-* 5 services IA supportés (Perplexity, ChatGPT, Claude, Grok, Mistral)
-* 3 styles d'affichage (icônes, boutons, liste)
-* Interface d'administration complète
-* Personnalisation du texte et du prompt
-* Support des Custom Post Types
-* Responsive et accessible
-* Sécurisé selon les standards WordPress
+* Initial release
+* Automatic display and shortcode
+* 5 AI services supported (Perplexity, ChatGPT, Claude, Grok, Mistral)
+* 3 display styles (icons, buttons, list)
+* Complete admin interface
+* Custom text and prompt
+* Custom Post Types support
+* Responsive and accessible
+* Secure following WordPress standards
 
 == Upgrade Notice ==
 
+= 1.1.0 =
+WordPress.org optimized version. WordPress will now handle updates automatically.
+
 = 1.0.0 =
-Version initiale du plugin ShareToAI.
+Initial release of ShareToAI plugin.
 
 == Support ==
 
-Pour toute question ou problème :
-* GitHub : https://github.com/webAnalyste/shareToAI/issues
-* Site web : https://www.webanalyste.com
+For questions or issues:
+* GitHub: https://github.com/webAnalyste/shareToAI/issues
+* Website: https://www.webanalyste.com
 
-== Développement ==
+== Development ==
 
-Le code source est disponible sur GitHub : https://github.com/webAnalyste/shareToAI
+Source code available on GitHub: https://github.com/webAnalyste/shareToAI
 
-Contributions bienvenues !
+Contributions welcome!
