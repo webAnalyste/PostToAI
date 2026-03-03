@@ -32,6 +32,7 @@ cp readme.txt "$RELEASE_DIR/"
 cp README.md "$RELEASE_DIR/"
 cp CHANGELOG.md "$RELEASE_DIR/"
 cp -r assets "$RELEASE_DIR/"
+cp -r languages "$RELEASE_DIR/"
 # includes/ exclu pour la version WordPress.org (système de mise à jour interdit)
 # cp -r includes "$RELEASE_DIR/"
 
