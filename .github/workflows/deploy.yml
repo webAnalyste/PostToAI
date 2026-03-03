@@ -1,0 +1,87 @@
+name: Deploy ShareToAI to WordPress
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.8.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      
+      - name: Add server to known hosts
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -H ${{ secrets.REMOTE_HOST }} >> ~/.ssh/known_hosts
+      
+      - name: Deploy to WordPress
+        env:
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          REMOTE_PATH: ${{ secrets.REMOTE_PATH }}
+        run: |
+          echo "🚀 Starting deployment..."
+          
+          # Créer un backup avant déploiement
+          ssh $REMOTE_USER@$REMOTE_HOST "cd $REMOTE_PATH && \
+            if [ -d shareToAI ]; then \
+              echo '📦 Creating backup...'; \
+              tar -czf shareToAI-backup-$(date +%Y%m%d-%H%M%S).tar.gz shareToAI/; \
+            fi"
+          
+          # Synchroniser les fichiers (exclure .git, .github, etc.)
+          rsync -avz --delete \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='.gitignore' \
+            --exclude='*.md' \
+            --exclude='node_modules' \
+            --exclude='.DS_Store' \
+            ./ $REMOTE_USER@$REMOTE_HOST:$REMOTE_PATH/shareToAI/
+          
+          echo "✅ Files synchronized successfully"
+      
+      - name: Set correct permissions
+        env:
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          REMOTE_PATH: ${{ secrets.REMOTE_PATH }}
+        run: |
+          ssh $REMOTE_USER@$REMOTE_HOST "cd $REMOTE_PATH/shareToAI && \
+            find . -type f -exec chmod 644 {} \; && \
+            find . -type d -exec chmod 755 {} \; && \
+            echo '🔒 Permissions set correctly'"
+      
+      - name: Clear WordPress cache (if WP-CLI available)
+        env:
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          REMOTE_PATH: ${{ secrets.REMOTE_PATH }}
+        run: |
+          ssh $REMOTE_USER@$REMOTE_HOST "cd $REMOTE_PATH/../.. && \
+            if command -v wp &> /dev/null; then \
+              wp cache flush --allow-root 2>/dev/null || true; \
+              echo '🧹 Cache cleared'; \
+            else \
+              echo '⚠️  WP-CLI not available, skipping cache flush'; \
+            fi"
+      
+      - name: Deployment summary
+        run: |
+          echo "✅ Deployment completed successfully!"
+          echo "📍 Server: ${{ secrets.REMOTE_HOST }}"
+          echo "📂 Path: ${{ secrets.REMOTE_PATH }}/shareToAI/"
+          echo "🕐 Time: $(date)"

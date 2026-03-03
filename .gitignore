@@ -6,3 +6,12 @@ node_modules/
 .vscode/
 .idea/
 *.zip
+
+# Fichiers de déploiement (ne pas commiter les secrets)
+.env.production
+.env.staging
+.env.local
+
+# Backups
+*.tar.gz
+*.backup
