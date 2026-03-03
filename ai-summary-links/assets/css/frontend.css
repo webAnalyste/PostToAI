@@ -1,0 +1,117 @@
+.aisl-container {
+    margin: 30px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #0073aa;
+}
+
+.aisl-text {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.aisl-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.aisl-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.aisl-link:hover {
+    transform: translateY(-2px);
+}
+
+.aisl-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.aisl-style-icons .aisl-link {
+    padding: 8px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.aisl-style-icons .aisl-link:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.aisl-style-buttons .aisl-link {
+    padding: 10px 20px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    color: #333;
+    font-weight: 500;
+}
+
+.aisl-style-buttons .aisl-link:hover {
+    background: #0073aa;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.aisl-style-buttons .aisl-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.aisl-style-list .aisl-links {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.aisl-style-list .aisl-link {
+    padding: 12px 20px;
+    background: white;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    color: #333;
+    font-weight: 500;
+}
+
+.aisl-style-list .aisl-link:hover {
+    background: #0073aa;
+    color: white;
+}
+
+.aisl-style-list .aisl-icon {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .aisl-container {
+        padding: 15px;
+    }
+    
+    .aisl-links {
+        gap: 10px;
+    }
+    
+    .aisl-icon {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .aisl-style-buttons .aisl-link,
+    .aisl-style-list .aisl-link {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
