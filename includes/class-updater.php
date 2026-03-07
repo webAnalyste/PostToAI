@@ -43,6 +43,12 @@ class ShareToAI_Updater {
         $remote_version = $this->get_remote_version();
         
         if ($remote_version && version_compare($this->version, $remote_version, '<')) {
+            $this->log(sprintf(
+                'Nouvelle version disponible : %s (actuelle : %s)',
+                $remote_version,
+                $this->version
+            ));
+            
             $plugin_data = array(
                 'slug' => dirname($this->plugin_slug),
                 'plugin' => $this->plugin_slug,
@@ -54,6 +60,12 @@ class ShareToAI_Updater {
             );
             
             $transient->response[$this->plugin_slug] = (object) $plugin_data;
+        } else {
+            $this->log(sprintf(
+                'Aucune mise à jour disponible. Version actuelle : %s, Version distante : %s',
+                $this->version,
+                $remote_version ? $remote_version : 'non disponible'
+            ));
         }
         
         return $transient;
@@ -67,10 +79,12 @@ class ShareToAI_Updater {
         $cached_version = get_transient($transient_key);
         
         if ($cached_version !== false) {
+            $this->log('Version distante récupérée depuis le cache : ' . $cached_version);
             return $cached_version;
         }
         
         $api_url = "https://api.github.com/repos/{$this->github_user}/{$this->github_repo}/releases/latest";
+        $this->log('Vérification de la version distante sur : ' . $api_url);
         
         $response = wp_remote_get($api_url, array(
             'timeout' => 10,
@@ -80,18 +94,35 @@ class ShareToAI_Updater {
         ));
         
         if (is_wp_error($response)) {
+            $this->log('Erreur lors de la récupération de la version distante : ' . $response->get_error_message(), 'error');
+            return false;
+        }
+        
+        $response_code = wp_remote_retrieve_response_code($response);
+        if ($response_code !== 200) {
+            $this->log(sprintf(
+                'Erreur HTTP %d lors de la récupération de la version distante. Le dépôt GitHub est peut-être privé ou inexistant.',
+                $response_code
+            ), 'error');
             return false;
         }
         
         $body = wp_remote_retrieve_body($response);
         $data = json_decode($body);
         
+        if (json_last_error() !== JSON_ERROR_NONE) {
+            $this->log('Erreur de décodage JSON : ' . json_last_error_msg(), 'error');
+            return false;
+        }
+        
         if (!empty($data->tag_name)) {
             $version = ltrim($data->tag_name, 'v');
             set_transient($transient_key, $version, 6 * HOUR_IN_SECONDS);
+            $this->log('Version distante trouvée : ' . $version);
             return $version;
         }
         
+        $this->log('Aucune release trouvée sur GitHub. Vérifiez que des releases sont publiées.', 'error');
         return false;
     }
     
@@ -196,15 +227,53 @@ class ShareToAI_Updater {
     public function after_install($response, $hook_extra, $result) {
         global $wp_filesystem;
         
-        $plugin_folder = WP_PLUGIN_DIR . '/' . dirname($this->plugin_slug);
-        $wp_filesystem->move($result['destination'], $plugin_folder);
-        $result['destination'] = $plugin_folder;
-        
-        // Réactiver le plugin si nécessaire
-        if ($this->is_plugin_active()) {
-            activate_plugin($this->plugin_slug);
+        if (!isset($result['destination'])) {
+            $this->log('Erreur : destination non définie dans le résultat de l\'installation', 'error');
+            return $result;
         }
         
+        if (!WP_Filesystem()) {
+            $this->log('Erreur : impossible d\'initialiser WP_Filesystem', 'error');
+            return $result;
+        }
+        
+        $plugin_folder = WP_PLUGIN_DIR . '/' . dirname($this->plugin_slug);
+        
+        if (!$wp_filesystem->exists($result['destination'])) {
+            $this->log('Erreur : le dossier source n\'existe pas : ' . $result['destination'], 'error');
+            return $result;
+        }
+        
+        if ($wp_filesystem->exists($plugin_folder)) {
+            $this->log('Suppression de l\'ancien dossier : ' . $plugin_folder);
+            if (!$wp_filesystem->delete($plugin_folder, true)) {
+                $this->log('Erreur : impossible de supprimer l\'ancien dossier', 'error');
+                return $result;
+            }
+        }
+        
+        $this->log(sprintf(
+            'Déplacement de %s vers %s',
+            $result['destination'],
+            $plugin_folder
+        ));
+        
+        if (!$wp_filesystem->move($result['destination'], $plugin_folder)) {
+            $this->log('Erreur : impossible de déplacer le dossier du plugin', 'error');
+            return $result;
+        }
+        
+        $result['destination'] = $plugin_folder;
+        
+        if (isset($hook_extra['plugin']) && $hook_extra['plugin'] === $this->plugin_slug) {
+            $this->log('Réactivation du plugin après mise à jour');
+            $activate = activate_plugin($this->plugin_slug);
+            if (is_wp_error($activate)) {
+                $this->log('Erreur lors de la réactivation : ' . $activate->get_error_message(), 'error');
+            }
+        }
+        
+        $this->log('Installation terminée avec succès');
         return $result;
     }
     
@@ -213,5 +282,29 @@ class ShareToAI_Updater {
      */
     private function is_plugin_active() {
         return is_plugin_active($this->plugin_slug);
+    }
+    
+    /**
+     * Enregistre un message de log si WP_DEBUG_LOG est activé
+     * 
+     * @param string $message Message à enregistrer
+     * @param string $level Niveau de log : 'info', 'error', 'warning'
+     */
+    private function log($message, $level = 'info') {
+        if (!defined('WP_DEBUG_LOG') || !WP_DEBUG_LOG) {
+            return;
+        }
+        
+        $prefix = '[ShareToAI Updater]';
+        $formatted_message = sprintf(
+            '%s [%s] %s',
+            $prefix,
+            strtoupper($level),
+            $message
+        );
+        
+        if (function_exists('error_log')) {
+            error_log($formatted_message);
+        }
     }
 }
