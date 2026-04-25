@@ -53,7 +53,7 @@ Le script va :
 ### 3. Vérifier la publication (quelques minutes après)
 
 Après le déploiement, visitez :
-- **Page du plugin :** https://wordpress.org/plugins/expansai-post-to-ai/
+- **Page du plugin :** https://wordpress.org/plugins/fscan-post-to-ai/
 - **Téléchargement :** Testez le bouton "Download"
 
 ⏱️ **Délai :** Le plugin apparaît immédiatement, mais les résultats de recherche peuvent prendre jusqu'à 72h.
@@ -84,7 +84,7 @@ Pour publier une nouvelle version à l'avenir :
 
 1. Modifiez votre code
 2. Mettez à jour la version dans :
-   - `expansai-post-to-ai.php` (ligne 6 et 18)
+   - `fscan-post-to-ai.php` (ligne 6 et 18)
    - `readme.txt` (ligne 7 + changelog)
    - `deploy-wordpress-org.sh` (ligne 11)
 3. Commitez dans GIT

@@ -120,7 +120,7 @@ fscan-post-to-ai/
 → Vérifiez votre mot de passe SVN sur WordPress.org
 
 ### Erreur : "svn: E155037"
-→ Le repository SVN existe déjà, supprimez le dossier `../expansai-post-to-ai-svn/`
+→ Le repository SVN existe déjà, supprimez le dossier `../fscan-post-to-ai-svn/`
 
 ### Le plugin n'apparaît pas dans les recherches
 → Normal, cela peut prendre jusqu'à 72h
