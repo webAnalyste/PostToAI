@@ -2,12 +2,12 @@
 
 ## 🎉 Félicitations !
 
-Votre plugin **expansAI Post to AI** a été approuvé par WordPress.org !
+Votre plugin **Fscan - Post to AI** a été approuvé par WordPress.org !
 
 **Informations de votre plugin :**
-- **Slug :** `expansai-post-to-ai`
-- **SVN URL :** https://plugins.svn.wordpress.org/expansai-post-to-ai
-- **Public URL :** https://wordpress.org/plugins/expansai-post-to-ai
+- **Slug :** `fscan-post-to-ai`
+- **SVN URL :** https://plugins.svn.wordpress.org/fscan-post-to-ai
+- **Public URL :** https://wordpress.org/plugins/fscan-post-to-ai
 - **Username SVN :** `fscan`
 
 ## 📋 Étapes de publication
@@ -33,7 +33,7 @@ Placez-les dans `assets/images/` avec les noms appropriés.
 ### Étape 3 : Vérifier les fichiers du plugin
 
 Le plugin contient actuellement :
-- ✅ `expansai-post-to-ai.php` (fichier principal)
+- ✅ `fscan-post-to-ai.php` (fichier principal)
 - ✅ `readme.txt` (description WordPress.org)
 - ✅ `uninstall.php` (désinstallation propre)
 - ✅ `includes/` (classes PHP)
@@ -63,7 +63,7 @@ Le script va :
 
 Après le déploiement (quelques minutes) :
 
-1. Visitez : https://wordpress.org/plugins/expansai-post-to-ai/
+1. Visitez : https://wordpress.org/plugins/fscan-post-to-ai/
 2. Vérifiez que le plugin s'affiche correctement
 3. Testez le bouton de téléchargement
 4. Vérifiez les screenshots et la bannière
@@ -76,7 +76,7 @@ Pour publier une nouvelle version :
 
 1. **Modifier le code** dans votre projet local
 2. **Mettre à jour la version** dans :
-   - `expansai-post-to-ai.php` (header + constante)
+   - `fscan-post-to-ai.php` (header + constante)
    - `readme.txt` (Stable tag + Changelog)
 3. **Commiter dans GIT** (règle d'or de sécurité)
 4. **Modifier la version** dans `deploy-wordpress-org.sh` (ligne `PLUGIN_VERSION`)
@@ -87,9 +87,9 @@ Pour publier une nouvelle version :
 Votre repository SVN aura cette structure :
 
 ```
-expansai-post-to-ai/
+fscan-post-to-ai/
 ├── trunk/                    # Version de développement (toujours la dernière)
-│   ├── expansai-post-to-ai.php
+│   ├── fscan-post-to-ai.php
 │   ├── readme.txt
 │   ├── uninstall.php
 │   ├── includes/
@@ -131,7 +131,7 @@ expansai-post-to-ai/
 ## 📞 Support
 
 - **Documentation WordPress.org :** https://developer.wordpress.org/plugins/wordpress-org/
-- **Forum de support :** https://wordpress.org/support/plugin/expansai-post-to-ai/
+- **Forum de support :** https://wordpress.org/support/plugin/fscan-post-to-ai/
 - **Votre GitHub :** https://github.com/webAnalyste/shareToAI
 
 ## ✅ Checklist finale

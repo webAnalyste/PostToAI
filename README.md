@@ -1,4 +1,4 @@
-# expansAI Post to AI
+# Fscan - Post to AI
 
 Plugin WordPress qui ajoute automatiquement des liens vers différentes IA pour résumer le contenu de vos posts et Custom Post Types.
 
@@ -8,13 +8,13 @@ Plugin WordPress qui ajoute automatiquement des liens vers différentes IA pour 
 
 Ce plugin permet d'afficher automatiquement une invitation personnalisable "Résumer ce contenu avec :" suivie d'icônes cliquables vers différents services d'IA (Perplexity, ChatGPT, Claude, Grok, Mistral).
 
-**expansAI Post to AI** est développé par [webAnalyste](https://www.webanalyste.com), agence spécialisée en Analytics, Data, Automatisation et Intelligence Artificielle. L'agence développe des solutions innovantes pour optimiser la performance digitale des entreprises.
+**Fscan - Post to AI** est développé par [webAnalyste](https://www.webanalyste.com), agence spécialisée en Analytics, Data, Automatisation et Intelligence Artificielle. L'agence développe des solutions innovantes pour optimiser la performance digitale des entreprises.
 
 ## Fonctionnalités
 
 - ✅ Affichage automatique en haut, en bas ou les deux
 - ✅ Support des posts et Custom Post Types
-- ✅ Shortcode `[expansai-post-to-ai]` pour placement manuel
+- ✅ Shortcode `[fscan-post-to-ai]` pour placement manuel
 - ✅ Texte et prompt personnalisables
 - ✅ Choix des services IA à afficher
 - ✅ 3 styles d'affichage : icônes, boutons, liste
@@ -24,10 +24,10 @@ Ce plugin permet d'afficher automatiquement une invitation personnalisable "Rés
 
 ## Installation
 
-1. Télécharger le dossier `expansai-post-to-ai`
+1. Télécharger le dossier `fscan-post-to-ai`
 2. Le placer dans `/wp-content/plugins/`
 3. Activer le plugin dans l'administration WordPress
-4. Configurer les options dans Réglages > expansAI Post to AI
+4. Configurer les options dans Réglages > Fscan - Post to AI
 
 ## Configuration
 
@@ -46,7 +46,7 @@ Ce plugin permet d'afficher automatiquement une invitation personnalisable "Rés
 Pour afficher les liens manuellement dans vos contenus :
 
 ```
-[expansai-post-to-ai]
+[fscan-post-to-ai]
 ```
 
 ## Services IA supportés
@@ -83,9 +83,9 @@ Pour approfondir vos compétences en Analytics, Data et IA, découvrez les forma
 
 ## Changelog
 
-### 1.0.5 (2026-04-10)
-- Renommage en expansAI Post to AI (slug : expansai-post-to-ai)
-- Shortcode mis à jour : `[expansai-post-to-ai]`
+### 1.0.5 (2026-04-25)
+- Renommage en Fscan - Post to AI (slug : fscan-post-to-ai)
+- Shortcode mis à jour : `[fscan-post-to-ai]`
 
 ### 1.0.0 (2026-03-03)
 - Version initiale

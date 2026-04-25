@@ -2,7 +2,7 @@
 
 ## ✅ Ce qui est prêt
 
-Votre plugin **expansAI Post to AI** est maintenant prêt à être publié sur WordPress.org !
+Votre plugin **Fscan - Post to AI** est maintenant prêt à être publié sur WordPress.org !
 
 ### Fichiers préparés
 - ✅ Plugin complet et fonctionnel (v1.0.5)
@@ -13,10 +13,10 @@ Votre plugin **expansAI Post to AI** est maintenant prêt à être publié sur W
 - ✅ Commits GIT de sauvegarde effectués
 
 ### Informations de publication
-- **Slug :** `expansai-post-to-ai`
+- **Slug :** `fscan-post-to-ai`
 - **Version :** 1.0.5
-- **SVN URL :** https://plugins.svn.wordpress.org/expansai-post-to-ai
-- **Public URL :** https://wordpress.org/plugins/expansai-post-to-ai
+- **SVN URL :** https://plugins.svn.wordpress.org/fscan-post-to-ai
+- **Public URL :** https://wordpress.org/plugins/fscan-post-to-ai
 - **Username :** fscan
 
 ## 📝 Actions à effectuer MAINTENANT

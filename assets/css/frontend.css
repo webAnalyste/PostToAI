@@ -1,4 +1,4 @@
-.posttoai-container {
+.fscan-ptai-container {
     margin: 30px 0;
     padding: 20px;
     background: #f8f9fa;
@@ -6,21 +6,21 @@
     border-left: 4px solid #0073aa;
 }
 
-.posttoai-text {
+.fscan-ptai-text {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 15px;
     color: #333;
 }
 
-.posttoai-links {
+.fscan-ptai-links {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     align-items: center;
 }
 
-.posttoai-link {
+.fscan-ptai-link {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -28,35 +28,35 @@
     transition: all 0.3s ease;
 }
 
-.posttoai-link:hover {
+.fscan-ptai-link:hover {
     transform: translateY(-2px);
     text-decoration: none !important;
 }
 
-.posttoai-link:focus,
-.posttoai-link:active,
-.posttoai-link:visited {
+.fscan-ptai-link:focus,
+.fscan-ptai-link:active,
+.fscan-ptai-link:visited {
     text-decoration: none !important;
 }
 
-.posttoai-icon {
+.fscan-ptai-icon {
     width: 32px;
     height: 32px;
     object-fit: contain;
 }
 
-.posttoai-style-icons .posttoai-link {
+.fscan-ptai-style-icons .fscan-ptai-link {
     padding: 8px;
     background: white;
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.posttoai-style-icons .posttoai-link:hover {
+.fscan-ptai-style-icons .fscan-ptai-link:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.posttoai-style-buttons .posttoai-link {
+.fscan-ptai-style-buttons .fscan-ptai-link {
     padding: 10px 20px;
     background: white;
     border-radius: 6px;
@@ -66,28 +66,28 @@
     border: 1px solid #ddd;
 }
 
-.posttoai-style-buttons .posttoai-link:hover {
+.fscan-ptai-style-buttons .fscan-ptai-link:hover {
     background: #0073aa;
     color: white !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     border-color: #0073aa;
 }
 
-.posttoai-style-buttons .posttoai-icon {
+.fscan-ptai-style-buttons .fscan-ptai-icon {
     width: 24px;
     height: 24px;
 }
 
-.posttoai-style-buttons .posttoai-name {
+.fscan-ptai-style-buttons .fscan-ptai-name {
     text-decoration: none !important;
 }
 
-.posttoai-style-list .posttoai-links {
+.fscan-ptai-style-list .fscan-ptai-links {
     flex-direction: column;
     align-items: flex-start;
 }
 
-.posttoai-style-list .posttoai-link {
+.fscan-ptai-style-list .fscan-ptai-link {
     padding: 12px 20px;
     background: white;
     border-radius: 6px;
@@ -99,37 +99,37 @@
     border: 1px solid #ddd;
 }
 
-.posttoai-style-list .posttoai-link:hover {
+.fscan-ptai-style-list .fscan-ptai-link:hover {
     background: #0073aa;
     color: white !important;
     border-color: #0073aa;
 }
 
-.posttoai-style-list .posttoai-icon {
+.fscan-ptai-style-list .fscan-ptai-icon {
     width: 24px;
     height: 24px;
 }
 
-.posttoai-style-list .posttoai-name {
+.fscan-ptai-style-list .fscan-ptai-name {
     text-decoration: none !important;
 }
 
 @media (max-width: 768px) {
-    .posttoai-container {
+    .fscan-ptai-container {
         padding: 15px;
     }
 
-    .posttoai-links {
+    .fscan-ptai-links {
         gap: 10px;
     }
 
-    .posttoai-icon {
+    .fscan-ptai-icon {
         width: 28px;
         height: 28px;
     }
 
-    .posttoai-style-buttons .posttoai-link,
-    .posttoai-style-list .posttoai-link {
+    .fscan-ptai-style-buttons .fscan-ptai-link,
+    .fscan-ptai-style-list .fscan-ptai-link {
         padding: 8px 15px;
         font-size: 14px;
     }
