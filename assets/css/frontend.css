@@ -1,4 +1,4 @@
-.fscan-ptai-container {
+.expansai-ptai-container {
     margin: 30px 0;
     padding: 20px;
     background: #f8f9fa;
@@ -6,21 +6,21 @@
     border-left: 4px solid #0073aa;
 }
 
-.fscan-ptai-text {
+.expansai-ptai-text {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 15px;
     color: #333;
 }
 
-.fscan-ptai-links {
+.expansai-ptai-links {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     align-items: center;
 }
 
-.fscan-ptai-link {
+.expansai-ptai-link {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -28,35 +28,35 @@
     transition: all 0.3s ease;
 }
 
-.fscan-ptai-link:hover {
+.expansai-ptai-link:hover {
     transform: translateY(-2px);
     text-decoration: none !important;
 }
 
-.fscan-ptai-link:focus,
-.fscan-ptai-link:active,
-.fscan-ptai-link:visited {
+.expansai-ptai-link:focus,
+.expansai-ptai-link:active,
+.expansai-ptai-link:visited {
     text-decoration: none !important;
 }
 
-.fscan-ptai-icon {
+.expansai-ptai-icon {
     width: 32px;
     height: 32px;
     object-fit: contain;
 }
 
-.fscan-ptai-style-icons .fscan-ptai-link {
+.expansai-ptai-style-icons .expansai-ptai-link {
     padding: 8px;
     background: white;
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.fscan-ptai-style-icons .fscan-ptai-link:hover {
+.expansai-ptai-style-icons .expansai-ptai-link:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.fscan-ptai-style-buttons .fscan-ptai-link {
+.expansai-ptai-style-buttons .expansai-ptai-link {
     padding: 10px 20px;
     background: white;
     border-radius: 6px;
@@ -66,28 +66,28 @@
     border: 1px solid #ddd;
 }
 
-.fscan-ptai-style-buttons .fscan-ptai-link:hover {
+.expansai-ptai-style-buttons .expansai-ptai-link:hover {
     background: #0073aa;
     color: white !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     border-color: #0073aa;
 }
 
-.fscan-ptai-style-buttons .fscan-ptai-icon {
+.expansai-ptai-style-buttons .expansai-ptai-icon {
     width: 24px;
     height: 24px;
 }
 
-.fscan-ptai-style-buttons .fscan-ptai-name {
+.expansai-ptai-style-buttons .expansai-ptai-name {
     text-decoration: none !important;
 }
 
-.fscan-ptai-style-list .fscan-ptai-links {
+.expansai-ptai-style-list .expansai-ptai-links {
     flex-direction: column;
     align-items: flex-start;
 }
 
-.fscan-ptai-style-list .fscan-ptai-link {
+.expansai-ptai-style-list .expansai-ptai-link {
     padding: 12px 20px;
     background: white;
     border-radius: 6px;
@@ -99,37 +99,37 @@
     border: 1px solid #ddd;
 }
 
-.fscan-ptai-style-list .fscan-ptai-link:hover {
+.expansai-ptai-style-list .expansai-ptai-link:hover {
     background: #0073aa;
     color: white !important;
     border-color: #0073aa;
 }
 
-.fscan-ptai-style-list .fscan-ptai-icon {
+.expansai-ptai-style-list .expansai-ptai-icon {
     width: 24px;
     height: 24px;
 }
 
-.fscan-ptai-style-list .fscan-ptai-name {
+.expansai-ptai-style-list .expansai-ptai-name {
     text-decoration: none !important;
 }
 
 @media (max-width: 768px) {
-    .fscan-ptai-container {
+    .expansai-ptai-container {
         padding: 15px;
     }
 
-    .fscan-ptai-links {
+    .expansai-ptai-links {
         gap: 10px;
     }
 
-    .fscan-ptai-icon {
+    .expansai-ptai-icon {
         width: 28px;
         height: 28px;
     }
 
-    .fscan-ptai-style-buttons .fscan-ptai-link,
-    .fscan-ptai-style-list .fscan-ptai-link {
+    .expansai-ptai-style-buttons .expansai-ptai-link,
+    .expansai-ptai-style-list .expansai-ptai-link {
         padding: 8px 15px;
         font-size: 14px;
     }

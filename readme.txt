@@ -18,7 +18,7 @@ Fscan - Post to AI permet d'afficher automatiquement une invitation personnalisa
 
 * ✅ Affichage automatique en haut, en bas ou les deux
 * ✅ Support des posts et Custom Post Types
-* ✅ Shortcode `[fscan-post-to-ai]` pour placement manuel
+* ✅ Shortcode `[expansai-post-to-ai]` pour placement manuel
 * ✅ Texte et prompt personnalisables
 * ✅ Choix des services IA à afficher
 * ✅ 3 styles d'affichage : icônes, boutons, liste
@@ -41,7 +41,7 @@ Fscan - Post to AI permet d'afficher automatiquement une invitation personnalisa
 3. Configurez vos préférences
 4. Les liens IA apparaîtront automatiquement sur vos articles
 
-Vous pouvez aussi utiliser le shortcode `[fscan-post-to-ai]` pour un placement manuel dans vos contenus.
+Vous pouvez aussi utiliser le shortcode `[expansai-post-to-ai]` pour un placement manuel dans vos contenus.
 
 == Installation ==
 
@@ -70,7 +70,7 @@ Dans Réglages > Fscan - Post to AI, cochez/décochez les services dans la secti
 
 = Le shortcode fonctionne-t-il dans les widgets ? =
 
-Oui, le shortcode `[fscan-post-to-ai]` fonctionne dans les articles, pages, widgets texte et templates PHP.
+Oui, le shortcode `[expansai-post-to-ai]` fonctionne dans les articles, pages, widgets texte et templates PHP.
 
 = Le plugin est-il compatible avec les page builders ? =
 
@@ -94,10 +94,11 @@ Non, Fscan - Post to AI est très léger (<10KB total) et n'effectue aucune requ
 
 == Changelog ==
 
-= 1.0.5 - 2026-04-25 =
-* Renommage du plugin en Fscan - Post to AI (slug : fscan-post-to-ai)
-* Mise à jour du shortcode : `[fscan-post-to-ai]`
-* Mise à jour du text domain et de tous les identifiants internes
+= 1.0.5 - 2026-04-26 =
+* Nom du plugin : Fscan - Post to AI
+* Slug WordPress.org : expansai-post-to-ai
+* Shortcode : `[expansai-post-to-ai]`
+* Mise à jour du text domain : expansai-post-to-ai
 
 = 1.0.4 - 2026-03-24 =
 * Renommage du plugin en PostToAI
@@ -129,7 +130,7 @@ Non, Fscan - Post to AI est très léger (<10KB total) et n'effectue aucune requ
 == Upgrade Notice ==
 
 = 1.0.5 =
-Renommage en Fscan - Post to AI. Mettez à jour vos shortcodes : `[posttoai]` doit être remplacé par `[fscan-post-to-ai]`.
+Nom du plugin : Fscan - Post to AI. Mettez à jour vos shortcodes : `[posttoai]` doit être remplacé par `[expansai-post-to-ai]`.
 
 == Support ==
 

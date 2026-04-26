@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script de déploiement WordPress.org pour Fscan - Post to AI
+# Script de déploiement WordPress.org pour Fscan - Post to AI (slug: expansai-post-to-ai)
 # Respecte les règles de sécurité et versioning
 
 set -e
@@ -12,7 +12,7 @@ YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
 # Configuration
-PLUGIN_SLUG="fscan-post-to-ai"
+PLUGIN_SLUG="expansai-post-to-ai"
 PLUGIN_VERSION="1.0.5"
 SVN_URL="https://plugins.svn.wordpress.org/${PLUGIN_SLUG}"
 SVN_USERNAME="fscan"
@@ -25,7 +25,7 @@ echo "Version: ${PLUGIN_VERSION}"
 echo ""
 
 # Vérification que nous sommes dans le bon répertoire
-if [ ! -f "fscan-post-to-ai.php" ]; then
+if [ ! -f "expansai-post-to-ai.php" ]; then
     echo -e "${RED}Erreur: fichier principal du plugin non trouvé${NC}"
     echo "Assurez-vous d'exécuter ce script depuis le répertoire du plugin"
     exit 1
@@ -74,7 +74,7 @@ rm -rf trunk/*
 echo -e "${YELLOW}Copie des fichiers du plugin...${NC}"
 
 # Fichiers principaux
-cp "$PLUGIN_DIR/fscan-post-to-ai.php" trunk/
+cp "$PLUGIN_DIR/expansai-post-to-ai.php" trunk/
 cp "$PLUGIN_DIR/readme.txt" trunk/
 cp "$PLUGIN_DIR/uninstall.php" trunk/
 
