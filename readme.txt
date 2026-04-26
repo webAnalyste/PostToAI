@@ -8,25 +8,25 @@ Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Ajoutez automatiquement des liens vers différentes IA pour résumer le contenu de vos posts et Custom Post Types.
+Automatically add links to various AI services to summarize your posts and Custom Post Types content.
 
 == Description ==
 
-Fscan - Post to AI permet d'afficher automatiquement une invitation personnalisable "Résumer ce contenu avec :" suivie d'icônes cliquables vers différents services d'IA (Perplexity, ChatGPT, Claude, Grok, Mistral).
+Fscan - Post to AI automatically displays a customizable invitation "Summarize this content with:" followed by clickable icons to various AI services (Perplexity, ChatGPT, Claude, Grok, Mistral).
 
-= Fonctionnalités principales =
+= Key Features =
 
-* ✅ Affichage automatique en haut, en bas ou les deux
-* ✅ Support des posts et Custom Post Types
-* ✅ Shortcode `[expansai-post-to-ai]` pour placement manuel
-* ✅ Texte et prompt personnalisables
-* ✅ Choix des services IA à afficher
-* ✅ 3 styles d'affichage : icônes, boutons, liste
-* ✅ Responsive et accessible
-* ✅ Sécurisé selon les standards WordPress
-* ✅ Traçabilité des clics (compatible Google Analytics)
+* ✅ Automatic display at top, bottom, or both
+* ✅ Support for posts and Custom Post Types
+* ✅ Shortcode `[expansai-post-to-ai]` for manual placement
+* ✅ Customizable text and prompt
+* ✅ Choose which AI services to display
+* ✅ 3 display styles: icons, buttons, list
+* ✅ Responsive and accessible
+* ✅ Secure according to WordPress standards
+* ✅ Click tracking (Google Analytics compatible)
 
-= Services IA supportés =
+= Supported AI Services =
 
 * Perplexity
 * ChatGPT
@@ -34,112 +34,133 @@ Fscan - Post to AI permet d'afficher automatiquement une invitation personnalisa
 * Grok
 * Mistral
 
-= Utilisation =
+= Usage =
 
-1. Activez le plugin
-2. Allez dans Réglages > Fscan - Post to AI
-3. Configurez vos préférences
-4. Les liens IA apparaîtront automatiquement sur vos articles
+1. Activate the plugin
+2. Go to Settings > Fscan - Post to AI
+3. Configure your preferences
+4. AI links will automatically appear on your posts
 
-Vous pouvez aussi utiliser le shortcode `[expansai-post-to-ai]` pour un placement manuel dans vos contenus.
+You can also use the shortcode `[expansai-post-to-ai]` for manual placement in your content.
+
+= About the Author =
+
+I'm **Franck Scandolera** ([franckscandolera.com](https://franckscandolera.com/)), founder of **[webAnalyste](https://www.webanalyste.com)** - an agency specialized in Data structuring, AI integration, workflow automation (n8n/Make/Python/Apps Script), and digital performance optimization. I also manage **[Formations Analytics](https://www.formations-analytics.com)**, a Qualiopi-certified training organization focused on Analytics, Data, AI, and Automation.
+
+---
+
+**[Version Française]**
+
+Fscan - Post to AI affiche automatiquement une invitation personnalisable "Résumer ce contenu avec :" suivie d'icônes cliquables vers différents services d'IA (Perplexity, ChatGPT, Claude, Grok, Mistral).
+
+**Fonctionnalités :**
+* Affichage automatique en haut, en bas ou les deux
+* Support des posts et Custom Post Types
+* Shortcode `[expansai-post-to-ai]` pour placement manuel
+* Texte et prompt personnalisables
+* 3 styles d'affichage : icônes, boutons, liste
+
+**À propos de l'auteur :**
+Je suis **Franck Scandolera** ([franckscandolera.com](https://franckscandolera.com/)), responsable de l'agence **[webAnalyste](https://www.webanalyste.com)** - une agence experte dans la structuration de la Data, l'intégration de l'IA, l'automatisation des activités (n8n/Make/Python/Apps Script) et l'optimisation de la performance digitale. Je gère également l'organisme de formation certifié Qualiopi **[Formations Analytics](https://www.formations-analytics.com)**.
 
 == Installation ==
 
-= Installation automatique =
+= Automatic Installation =
 
-1. Allez dans Extensions > Ajouter
-2. Recherchez "Fscan - Post to AI"
-3. Cliquez sur Installer puis Activer
+1. Go to Plugins > Add New
+2. Search for "Fscan - Post to AI"
+3. Click Install then Activate
 
-= Installation manuelle =
+= Manual Installation =
 
-1. Téléchargez le fichier ZIP du plugin
-2. Allez dans Extensions > Ajouter > Téléverser une extension
-3. Sélectionnez le fichier ZIP
-4. Cliquez sur Installer maintenant puis Activer
+1. Download the plugin ZIP file
+2. Go to Plugins > Add New > Upload Plugin
+3. Select the ZIP file
+4. Click Install Now then Activate
 
 == Frequently Asked Questions ==
 
-= Comment personnaliser le texte d'invitation ? =
+= How to customize the invitation text? =
 
-Allez dans Réglages > Fscan - Post to AI et modifiez le champ "Texte personnalisé".
+Go to Settings > Fscan - Post to AI and modify the "Custom Text" field.
 
-= Comment choisir quels services IA afficher ? =
+= How to choose which AI services to display? =
 
-Dans Réglages > Fscan - Post to AI, cochez/décochez les services dans la section "Services IA activés".
+In Settings > Fscan - Post to AI, check/uncheck services in the "Enabled AI Services" section.
 
-= Le shortcode fonctionne-t-il dans les widgets ? =
+= Does the shortcode work in widgets? =
 
-Oui, le shortcode `[expansai-post-to-ai]` fonctionne dans les articles, pages, widgets texte et templates PHP.
+Yes, the shortcode `[expansai-post-to-ai]` works in posts, pages, text widgets, and PHP templates.
 
-= Le plugin est-il compatible avec les page builders ? =
+= Is the plugin compatible with page builders? =
 
-Oui, Fscan - Post to AI est compatible avec Elementor, Divi, Gutenberg et tous les page builders majeurs.
+Yes, Fscan - Post to AI is compatible with Elementor, Divi, Gutenberg, and all major page builders.
 
-= Comment désactiver le plugin sur certains articles ? =
+= How to disable the plugin on specific posts? =
 
-Réglez la position sur "Manuel" dans les paramètres, puis utilisez le shortcode uniquement où vous le souhaitez.
+Set the position to "Manual" in settings, then use the shortcode only where you want.
 
-= Le plugin ralentit-il mon site ? =
+= Does the plugin slow down my site? =
 
-Non, Fscan - Post to AI est très léger (<10KB total) et n'effectue aucune requête externe.
+No, Fscan - Post to AI is very lightweight (<10KB total) and makes no external requests.
 
 == Screenshots ==
 
-1. Page de configuration du plugin dans Réglages > Fscan - Post to AI
-2. Affichage des liens IA en style "Icônes" sur un article
-3. Affichage en style "Boutons avec texte"
-4. Affichage en style "Liste"
-5. Personnalisation du prompt avec placeholder {URL}
+1. Plugin settings page in Settings > Fscan - Post to AI
+2. AI links display in "Icons" style on a post
+3. Display in "Buttons with text" style
+4. Display in "List" style
+5. Prompt customization with {URL} placeholder
 
 == Changelog ==
 
 = 1.0.5 - 2026-04-26 =
-* Nom du plugin : Fscan - Post to AI
-* Slug WordPress.org : expansai-post-to-ai
-* Shortcode : `[expansai-post-to-ai]`
-* Mise à jour du text domain : expansai-post-to-ai
+* Plugin name: Fscan - Post to AI
+* WordPress.org slug: expansai-post-to-ai
+* Shortcode: `[expansai-post-to-ai]`
+* Updated text domain: expansai-post-to-ai
 
 = 1.0.4 - 2026-03-24 =
-* Renommage du plugin en PostToAI
-* Correction des incohérences de nommage (text domain, shortcode, classes CSS)
+* Plugin renamed to PostToAI
+* Fixed naming inconsistencies (text domain, shortcode, CSS classes)
 
 = 1.0.3 - 2026-03-03 =
-* Version de test pour le système de mise à jour automatique
+* Test version for automatic update system
 
 = 1.0.2 - 2026-03-03 =
-* Mise à jour des informations d'auteur : Franck Scandolera / webAnalyste
-* Correction du prompt par défaut
+* Updated author information: Franck Scandolera / webAnalyste
+* Fixed default prompt
 
 = 1.0.1 - 2026-03-03 =
-* Ajout de rel="nofollow" sur tous les liens IA (SEO)
-* Correction du style des boutons (suppression du soulignement)
-* Amélioration visuelle des boutons avec bordure
+* Added rel="nofollow" to all AI links (SEO)
+* Fixed button style (removed underline)
+* Visual improvement of buttons with border
 
 = 1.0.0 - 2026-03-03 =
-* Version initiale
-* Affichage automatique et shortcode
-* 5 services IA supportés (Perplexity, ChatGPT, Claude, Grok, Mistral)
-* 3 styles d'affichage (icônes, boutons, liste)
-* Interface d'administration complète
-* Personnalisation du texte et du prompt
-* Support des Custom Post Types
-* Responsive et accessible
-* Sécurisé selon les standards WordPress
+* Initial release
+* Automatic display and shortcode
+* 5 supported AI services (Perplexity, ChatGPT, Claude, Grok, Mistral)
+* 3 display styles (icons, buttons, list)
+* Complete admin interface
+* Text and prompt customization
+* Custom Post Types support
+* Responsive and accessible
+* Secure according to WordPress standards
 
 == Upgrade Notice ==
 
 = 1.0.5 =
-Nom du plugin : Fscan - Post to AI. Mettez à jour vos shortcodes : `[posttoai]` doit être remplacé par `[expansai-post-to-ai]`.
+Plugin name: Fscan - Post to AI. Update your shortcodes: `[posttoai]` must be replaced with `[expansai-post-to-ai]`.
 
 == Support ==
 
-Pour toute question ou problème :
-* GitHub : https://github.com/webAnalyste/shareToAI/issues
-* Site web : https://www.webanalyste.com
+For any questions or issues:
+* GitHub: https://github.com/webAnalyste/shareToAI/issues
+* Website: https://www.webanalyste.com
+* Author: https://franckscandolera.com
 
-== Développement ==
+== Development ==
 
-Le code source est disponible sur GitHub : https://github.com/webAnalyste/shareToAI
+Source code is available on GitHub: https://github.com/webAnalyste/shareToAI
 
-Contributions bienvenues !
+Contributions welcome!
