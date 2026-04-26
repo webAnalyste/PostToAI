@@ -4,7 +4,7 @@ Tags: ai, chatgpt, claude, perplexity, summary
 Requires at least: 5.0
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -126,6 +126,10 @@ Example: "Summarize this article titled '{TITLE}' by {AUTHOR} from {DOMAIN}: {UR
 5. Prompt customization with {URL} placeholder
 
 == Changelog ==
+
+= 1.0.8 - 2026-04-26 =
+* Fix: Load translations BEFORE creating default options (activation hook)
+* Texts in English by default, properly translated to French via .po/.mo files
 
 = 1.0.7 - 2026-04-26 =
 * Fix: Default texts now in French (simple and effective)
