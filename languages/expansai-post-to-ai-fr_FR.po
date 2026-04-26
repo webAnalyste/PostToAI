@@ -80,9 +80,9 @@ msgstr "Manuel (shortcode uniquement)"
 msgid "Text displayed before AI icons"
 msgstr "Texte affiché avant les icônes IA"
 
-#: expansai-post-to-ai.php:271
-msgid "Use {URL} as placeholder for the page URL"
-msgstr "Utilisez {URL} comme placeholder pour l'URL de la page"
+#: expansai-post-to-ai.php:272
+msgid "Available placeholders:"
+msgstr "Placeholders disponibles :"
 
 #: expansai-post-to-ai.php:294
 msgid "Icons only"

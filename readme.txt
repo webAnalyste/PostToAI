@@ -104,6 +104,19 @@ Set the position to "Manual" in settings, then use the shortcode only where you 
 
 No, Fscan - Post to AI is very lightweight (<10KB total) and makes no external requests.
 
+= What placeholders can I use in the custom prompt? =
+
+You can use the following placeholders to personalize your AI prompt:
+* `{URL}` - The full URL of the current post
+* `{DOMAIN}` - Your website domain (e.g., example.com)
+* `{SITE_NAME}` - Your website name
+* `{TITLE}` - The post title
+* `{AUTHOR}` - The post author name
+* `{DATE}` - The post publication date
+* `{EXCERPT}` - A short excerpt of the post (30 words)
+
+Example: "Summarize this article titled '{TITLE}' by {AUTHOR} from {DOMAIN}: {URL}"
+
 == Screenshots ==
 
 1. Plugin settings page in Settings > Fscan - Post to AI
